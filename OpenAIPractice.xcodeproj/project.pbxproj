@@ -13,10 +13,13 @@
 		7586B868294DBE3400941A08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7586B866294DBE3400941A08 /* Main.storyboard */; };
 		7586B86A294DBE3500941A08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7586B869294DBE3500941A08 /* Assets.xcassets */; };
 		7586B86D294DBE3500941A08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7586B86B294DBE3500941A08 /* LaunchScreen.storyboard */; };
+		7586B875294DC2EB00941A08 /* OpenAIBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586B874294DC2EB00941A08 /* OpenAIBody.swift */; };
+		7586B879294DCE9A00941A08 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586B878294DCE9A00941A08 /* TableViewCell.swift */; };
+		7586B87B294DD0CF00941A08 /* OpenAIAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586B87A294DD0CF00941A08 /* OpenAIAnswer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7586B85D294DBE3400941A08 /* TDXPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDXPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7586B85D294DBE3400941A08 /* OpenAIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenAIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7586B860294DBE3400941A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7586B862294DBE3400941A08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7586B864294DBE3400941A08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		7586B869294DBE3500941A08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7586B86C294DBE3500941A08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7586B86E294DBE3500941A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7586B874294DC2EB00941A08 /* OpenAIBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIBody.swift; sourceTree = "<group>"; };
+		7586B878294DCE9A00941A08 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		7586B87A294DD0CF00941A08 /* OpenAIAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIAnswer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +46,7 @@
 		7586B854294DBE3400941A08 = {
 			isa = PBXGroup;
 			children = (
-				7586B85F294DBE3400941A08 /* TDXPractice */,
+				7586B85F294DBE3400941A08 /* OpenAIPractice */,
 				7586B85E294DBE3400941A08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +54,34 @@
 		7586B85E294DBE3400941A08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7586B85D294DBE3400941A08 /* TDXPractice.app */,
+				7586B85D294DBE3400941A08 /* OpenAIPractice.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7586B85F294DBE3400941A08 /* TDXPractice */ = {
+		7586B85F294DBE3400941A08 /* OpenAIPractice */ = {
 			isa = PBXGroup;
 			children = (
 				7586B860294DBE3400941A08 /* AppDelegate.swift */,
 				7586B862294DBE3400941A08 /* SceneDelegate.swift */,
+				7586B874294DC2EB00941A08 /* OpenAIBody.swift */,
+				7586B87A294DD0CF00941A08 /* OpenAIAnswer.swift */,
+				7586B878294DCE9A00941A08 /* TableViewCell.swift */,
 				7586B864294DBE3400941A08 /* ViewController.swift */,
 				7586B866294DBE3400941A08 /* Main.storyboard */,
 				7586B869294DBE3500941A08 /* Assets.xcassets */,
 				7586B86B294DBE3500941A08 /* LaunchScreen.storyboard */,
 				7586B86E294DBE3500941A08 /* Info.plist */,
 			);
-			path = TDXPractice;
+			path = OpenAIPractice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7586B85C294DBE3400941A08 /* TDXPractice */ = {
+		7586B85C294DBE3400941A08 /* OpenAIPractice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7586B871294DBE3500941A08 /* Build configuration list for PBXNativeTarget "TDXPractice" */;
+			buildConfigurationList = 7586B871294DBE3500941A08 /* Build configuration list for PBXNativeTarget "OpenAIPractice" */;
 			buildPhases = (
 				7586B859294DBE3400941A08 /* Sources */,
 				7586B85A294DBE3400941A08 /* Frameworks */,
@@ -82,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = TDXPractice;
+			name = OpenAIPractice;
 			productName = TDXPractice;
-			productReference = 7586B85D294DBE3400941A08 /* TDXPractice.app */;
+			productReference = 7586B85D294DBE3400941A08 /* OpenAIPractice.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7586B858294DBE3400941A08 /* Build configuration list for PBXProject "TDXPractice" */;
+			buildConfigurationList = 7586B858294DBE3400941A08 /* Build configuration list for PBXProject "OpenAIPractice" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7586B85C294DBE3400941A08 /* TDXPractice */,
+				7586B85C294DBE3400941A08 /* OpenAIPractice */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7586B879294DCE9A00941A08 /* TableViewCell.swift in Sources */,
 				7586B865294DBE3400941A08 /* ViewController.swift in Sources */,
+				7586B875294DC2EB00941A08 /* OpenAIBody.swift in Sources */,
 				7586B861294DBE3400941A08 /* AppDelegate.swift in Sources */,
 				7586B863294DBE3400941A08 /* SceneDelegate.swift in Sources */,
+				7586B87B294DD0CF00941A08 /* OpenAIAnswer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +300,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TDXPractice/Info.plist;
+				INFOPLIST_FILE = OpenAIPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -299,7 +311,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pulin.TDXPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pulin.OpenAIPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -315,7 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TDXPractice/Info.plist;
+				INFOPLIST_FILE = OpenAIPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -326,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pulin.TDXPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pulin.OpenAIPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -337,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7586B858294DBE3400941A08 /* Build configuration list for PBXProject "TDXPractice" */ = {
+		7586B858294DBE3400941A08 /* Build configuration list for PBXProject "OpenAIPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7586B86F294DBE3500941A08 /* Debug */,
@@ -346,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7586B871294DBE3500941A08 /* Build configuration list for PBXNativeTarget "TDXPractice" */ = {
+		7586B871294DBE3500941A08 /* Build configuration list for PBXNativeTarget "OpenAIPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7586B872294DBE3500941A08 /* Debug */,
