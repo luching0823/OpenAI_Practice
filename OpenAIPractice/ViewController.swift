@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var questionTextField: UITextField!
     @IBOutlet weak var sendButton: UIButton!
+    @IBOutlet weak var bottomView: UIView!
     
     var answerDictionary: [Int: String] = [:] {
         didSet {
@@ -23,10 +24,35 @@ class ViewController: UIViewController {
         }
     }
     
+    var keyBoardHeight: Double = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.estimatedRowHeight = UITableView.automaticDimension
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        /* 監聽 鍵盤顯示/隱藏 事件 */
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillShow),
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil)
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillHide),
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil)
+    }
+    
+    // 點擊空白時讓鍵盤消失
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 
     @IBAction func pressedSendButton(_ sender: Any) {
@@ -95,3 +121,22 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 
+extension ViewController {
+    @objc func keyboardWillShow(note: NSNotification) {
+            
+        let userInfo = note.userInfo!
+        /* 取得鍵盤尺寸 */
+        let keyboard = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.size
+        self.keyBoardHeight = keyboard.height
+            
+        var react = self.bottomView.frame
+        react.origin.y -= self.keyBoardHeight
+        self.bottomView.frame = react
+    }
+         
+        @objc func keyboardWillHide(note: NSNotification) {
+            /* 鍵盤隱藏時將畫面下移回原樣 */
+            let keyboardAnimationDetail = note.userInfo as! [String: AnyObject]
+            self.bottomView.frame.origin.y += self.keyBoardHeight
+        }
+}
