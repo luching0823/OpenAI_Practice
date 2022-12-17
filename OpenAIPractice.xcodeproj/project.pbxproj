@@ -16,6 +16,7 @@
 		7586B875294DC2EB00941A08 /* OpenAIBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586B874294DC2EB00941A08 /* OpenAIBody.swift */; };
 		7586B879294DCE9A00941A08 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586B878294DCE9A00941A08 /* TableViewCell.swift */; };
 		7586B87B294DD0CF00941A08 /* OpenAIAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586B87A294DD0CF00941A08 /* OpenAIAnswer.swift */; };
+		75D96B9A294DEA520046B856 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 75D96B99294DEA520046B856 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7586B874294DC2EB00941A08 /* OpenAIBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIBody.swift; sourceTree = "<group>"; };
 		7586B878294DCE9A00941A08 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		7586B87A294DD0CF00941A08 /* OpenAIAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIAnswer.swift; sourceTree = "<group>"; };
+		75D96B99294DEA520046B856 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		7586B854294DBE3400941A08 = {
 			isa = PBXGroup;
 			children = (
+				75D96B99294DEA520046B856 /* .gitignore */,
 				7586B85F294DBE3400941A08 /* OpenAIPractice */,
 				7586B85E294DBE3400941A08 /* Products */,
 			);
@@ -134,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D96B9A294DEA520046B856 /* .gitignore in Resources */,
 				7586B86D294DBE3500941A08 /* LaunchScreen.storyboard in Resources */,
 				7586B86A294DBE3500941A08 /* Assets.xcassets in Resources */,
 				7586B868294DBE3400941A08 /* Main.storyboard in Resources */,
